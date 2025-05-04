@@ -4,6 +4,7 @@ import java.util.Scanner;
 public class CalculatorLV1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        final Set<Character> VALID_OPERATIONS = Set.of('+', '-', '*', '/');
         int result = 0;
         int first_int = 0;
         int second_int = 0;
