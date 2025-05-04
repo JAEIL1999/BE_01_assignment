@@ -38,9 +38,7 @@ public class CalculatorLV2 {
             Collection<Integer> get_results = calculator.getValues();
             get_results.add(result);
             calculator.setValues(get_results);
-            for(int n: get_results) {
-                System.out.println(n + " ");
-            }
+            
             if(get_results.size() >MAX_STORE) { // 사용자 설정 이상의 개수가 저장되어 있으면 하나 삭제
                 System.out.println(MAX_STORE + "개 이상의 값이 저장되어있습니다. 가장 오래된 결과를 삭제합니다...");
                 calculator.removeResult();
